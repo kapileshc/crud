@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <table class="table-primary">
+        <tr>
+            <form onsubmit="event.preventDefault(); onFormSubmit()">
+                <div class="container-fluid">
+                    <input type="text" name="country" id="country" placeholder="enter a country name" />
+                    <input type="submit" value="submit" class="btn btn-primary">
+                </div>
+            </form>
+            <form onsubmit="event.preventDefault(); onSearch()">
+                <div class="container-fluid">
+                    <input type="text" name="countrysearch" id="countrysearch" placeholder="search a country"/>
+                    <input type="submit" value="search" class="btn btn-danger">
+                </div>
+            </form>
+            
+        </tr>
+        <tr>
+            <table class="table table-striped" id="countryList">
+                <thead>
+                    <tr>
+                        <th>Country Name</th>
+                        <th>choice1</th>
+                        <th>choice2</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </tr>
+    </table>
+</div>
+    
+</body>
+<script src="script.js"></script>
+</html>
